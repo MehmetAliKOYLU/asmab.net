@@ -1,0 +1,109 @@
+
+<!doctype html><html lang="tr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ASMAB | Makine & Bilişim</title>
+<link rel="stylesheet" href="styles.css">
+<meta name="description" content="ASMAB Makine & Bilişim - endüstriyel otomasyon, makine imalatı ve yazılım çözümleri.">
+</head><body>
+
+<header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="ASMAB Logo"/><span class="title">ASMAB</span>
+    </a>
+    
+    <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">☰</button>
+    <nav>
+      <ul id="menu">
+        <li><a href="index.html" class="active">Anasayfa</a></li>
+        <li><a href="hakkimizda.html" >Hakkımızda</a></li>
+        <li><a href="yaptigimiz-isler.html" >Yaptığımız İşler</a></li>
+        <li><a href="referanslar.html" >Referanslarımız</a></li>
+        <li><a href="iletisim.html" >İletişim</a></li>
+      </ul>
+    </nav>
+    
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero slider" aria-label="Tanıtım Slider">
+    <div class="slides" id="slides">
+      <div class="slide" style="background:linear-gradient(135deg,#0f2f44,#284b63)">
+        <div>
+          <h1 class="headline">Endüstriyel Otomasyon <br/>ve Akıllı Sistemler</h1>
+          <p>Üretim hatlarınızı dijitalleştiriyor, verimliliği artırıyoruz. PLC/SCADA, IoT ve özel yazılım çözümleri.</p>
+          <a class="btn primary" href="yaptigimiz-isler.html">Çözümlerimizi İncele</a>
+          <a class="btn ghost" href="iletisim.html" style="margin-left:8px">Teklif Al</a>
+        </div>
+        <div>
+          <div class="card"><h3>Öne Çıkan</h3><p>Gerçek zamanlı veri toplama ve dashboard entegrasyonu.</p></div>
+          <div class="card" style="margin-top:12px"><h3>Bakım & Destek</h3><p>7/24 izleme ve uzaktan destek hizmetleri.</p></div>
+        </div>
+      </div>
+      <div class="slide" style="background:linear-gradient(135deg,#2a6f97,#3a86b5)">
+        <div>
+          <h2 class="headline">Makine Tasarım &amp; İmalat</h2>
+          <p>Özel amaçlı makineler, konveyör sistemleri ve robotik entegrasyon.</p>
+          <a class="btn primary" href="referanslar.html">Referanslarımıza Göz At</a>
+        </div>
+        <div>
+          <div class="card"><h3>CAD/CAM</h3><p>3D tasarım, simülasyon ve hızlı prototipleme.</p></div>
+          <div class="card" style="margin-top:12px"><h3>Entegrasyon</h3><p>Robot, sensör ve güvenlik sistemleri entegrasyonu.</p></div>
+        </div>
+      </div>
+      <div class="slide" style="background:linear-gradient(135deg,#0f2f44,#2a6f97)">
+        <div>
+          <h2 class="headline">Kurumsal Yazılım</h2>
+          <p>Web uygulamaları, veri görselleştirme ve ERP entegrasyon çözümleri.</p>
+          <a class="btn primary" href="hakkimizda.html">Şirketi Tanıyın</a>
+        </div>
+        <div>
+          <div class="card"><h3>Güvenlik</h3><p>Modern güvenlik standartları ve performans odaklı altyapı.</p></div>
+          <div class="card" style="margin-top:12px"><h3>Bulut</h3><p>Esnek, ölçeklenebilir bulut mimarileri.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="control" onclick="prev()">‹</button>
+      <button class="control" onclick="next()">›</button>
+    </div>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <section class="section">
+    <h2>Öne Çıkan Hizmetler</h2>
+    <div class="grid">
+      <div class="card"><h3>PLC / SCADA</h3><p>Siemens, Allen‑Bradley, Omron vb. sistemlerin programlanması ve entegrasyonu.</p></div>
+      <div class="card"><h3>Robotik</h3><p>Endüstriyel robot kurulumları, hücre tasarımları ve güvenlik.</p></div>
+      <div class="card"><h3>Yazılım</h3><p>Web panelleri, izleme ve raporlama araçları, API entegrasyonları.</p></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container cols">
+    <div>
+      <h3 style="margin:0 0 8px">ASMAB Makine &amp; Bilişim</h3>
+      <p style="margin:0;color:#cfe0f1">Endüstriyel otomasyon, makine imalatı ve yazılım çözümleri.</p>
+      <div style="margin-top:12px" class="badge">Kurumsal</div>
+    </div>
+    <div>
+      <h4>Hızlı Men&uuml;</h4>
+      <p><a href="hakkimizda.html">Hakkımızda</a></p>
+      <p><a href="yaptigimiz-isler.html">Yaptığımız İşler</a></p>
+      <p><a href="referanslar.html">Referanslarımız</a></p>
+      <p><a href="iletisim.html">İletişim</a></p>
+    </div>
+    <div>
+      <h4>İletişim</h4>
+      <p>E‑posta: <a href="mailto:info@asmab.net">info@asmab.net</a></p>
+      <p>Telefon: <a href="tel:+90-000-000-00-00">+90 000 000 00 00</a></p>
+      <p>Adres: İstanbul, Türkiye</p>
+    </div>
+  </div>
+  <div class="copyright">© {2025} ASMAB. Tüm hakları saklıdır.</div>
+</footer>
+
+<script src="script.js"></script>
+</body></html>
