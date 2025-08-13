@@ -45,7 +45,7 @@ nav a.active, nav a:hover{background:#e8f1f7;color:var(--primary)}
 .dot.active{background:#fff;width:22px}
 /* Cards */
 .section {
-  margin: 300px 0;
+  margin: 70px 0;
   display: flex;
   flex-direction: column;
   align-items: center; /* yatay ortalama */
@@ -130,7 +130,7 @@ button{cursor:pointer}
 
 
 html, body {
-  font-size: 20px; /* tüm site genelinde yazı boyutu artar */
+  font-size: 15px; /* tüm site genelinde yazı boyutu artar */
 }
 
 h1 {
