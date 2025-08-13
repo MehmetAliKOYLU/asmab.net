@@ -12,14 +12,14 @@
 html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial,sans-serif;background:var(--bg);color:#0f172a}
 a{color:var(--primary);text-decoration:none}
 img{max-width:100%;height:auto}
-.container{width:min(1200px,90%);margin:0 auto}
+.container{width:min(1920px,95%);margin:0 auto}
 header{
   position:sticky;top:0;z-index:10;background:var(--white);
   box-shadow:var(--shadow)
 }
 .navbar{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:12px}
 .brand{display:flex;align-items:center;gap:12px}
-.brand img{height:46px;width:auto}
+.brand img{height:70px;width:auto}
 .brand .title{font-size:22px;font-weight:800;letter-spacing:.5px;color:var(--primary)}
 nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
 nav a{padding:10px 12px;border-radius:12px;font-weight:600;color:#0b2239}
@@ -31,7 +31,7 @@ nav a.active, nav a:hover{background:#e8f1f7;color:var(--primary)}
 .slides{display:flex;transition:transform .6s ease}
 .slide{
   min-width:100%;display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:center;
-  padding:64px;min-height:440px
+  padding:64px;min-height:940px
 }
 .slide .headline{font-size:48px;line-height:1.1;margin:0 0 12px;font-weight:800}
 .slide p{font-size:18px;opacity:.95;margin:0 0 24px}
@@ -44,10 +44,48 @@ nav a.active, nav a:hover{background:#e8f1f7;color:var(--primary)}
 .dot{width:10px;height:10px;border-radius:999px;background:rgba(255,255,255,.5)}
 .dot.active{background:#fff;width:22px}
 /* Cards */
-.section{margin:60px 0}
-.section h2{font-size:32px;margin:0 0 20px;color:var(--primary)}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+.section {
+  margin: 90px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* yatay ortalama */
+}
+
+.section h2 {
+  font-size: 32px;
+  margin: 0 0 20px;
+  color: var(--primary);
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* kartları ortala */
+  gap: 100px;
+}
+
+.card img {
+  width: 100%;
+  height: 350px;      /* tüm resimler bu yükseklikte olur */
+  object-fit: cover;  /* boyutlandırırken taşma olursa kırpar */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.card h3 {
+  font-size: 30px;    /* başlık boyutu büyütüldü */
+}
+
+.card p {
+  font-size: 25px;    /* açıklama boyutu büyütüldü */   /* okunabilirlik için satır aralığı */
+}
+
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px;
+}
 .card h3{margin:0 0 8px}
 .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#ecf3ff;color:#1e3a8a;font-weight:700;font-size:12px}
 footer{margin-top:50px;background:#0f2030;color:#cfe0f1}
@@ -69,4 +107,36 @@ button{cursor:pointer}
 @media (max-width:600px){
   .grid{grid-template-columns:1fr}
   .slide .headline{font-size:36px}
+}
+
+
+html, body {
+  font-size: 20px; /* tüm site genelinde yazı boyutu artar */
+}
+
+h1 {
+  font-size: 2.5rem; /* ~45px */
+}
+
+h2 {
+  font-size: 2rem; /* ~36px */
+}
+
+h3 {
+  font-size: 1.4rem; /* ~25px */
+}
+
+p {
+  font-size: 1.1rem; /* ~20px */
+}
+
+
+/* SLIDER KART YAZILARINI KOYU YAP */
+.hero .card { 
+  background: #fff; 
+  color: #0f172a !important;   /* metin rengi */
+}
+.hero .card h3,
+.hero .card p {
+  color: #0f172a !important;   /* başlık ve paragraf */
 }
