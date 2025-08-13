@@ -45,7 +45,7 @@ nav a.active, nav a:hover{background:#e8f1f7;color:var(--primary)}
 .dot.active{background:#fff;width:22px}
 /* Cards */
 .section {
-  margin: 90px 0;
+  margin: 300px 0;
   display: flex;
   flex-direction: column;
   align-items: center; /* yatay ortalama */
@@ -57,6 +57,25 @@ nav a.active, nav a:hover{background:#e8f1f7;color:var(--primary)}
   color: var(--primary);
   text-align: center;
 }
+
+
+.section.card {
+  padding: 90px 50px; /* formun iç boşluğunu büyüttük */
+  min-height: 500px;  /* formun minimum yüksekliği */
+}
+
+.section.card form input,
+.section.card form textarea {
+  padding: 20px 24px; /* input/textarea iç boşluğu */
+  font-size: 24px;    /* yazı boyutu */
+}
+
+.section.card form button {
+  padding: 24px 28px; /* buton yüksekliği ve genişliği */
+  font-size: 20px;
+}
+
+
 
 .grid {
   display: flex;
